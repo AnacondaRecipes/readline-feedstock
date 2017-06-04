@@ -18,9 +18,9 @@ build:
 requirements:
   build:
     - pkg-config
-    - ncurses 5.9*
+    - ncurses 6.0*
   run:
-    - ncurses 5.9*
+    - ncurses 6.0*
 
 test:
   commands:
