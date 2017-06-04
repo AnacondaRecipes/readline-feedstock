@@ -13,11 +13,13 @@ source:
 
 build:
   skip: true  # [win]
-  number: 0
+  number: 1
 
 requirements:
   build:
     - pkg-config
+    - {{ compiler('c') }}
+  host:
     - ncurses 6.0*
   run:
     - ncurses 6.0*
@@ -47,3 +49,4 @@ extra:
     - pelson
     - msarahan
     - asmeurer
+    - mingwandroid
