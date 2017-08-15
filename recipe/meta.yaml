@@ -39,7 +39,13 @@ test:
 about:
   home: https://cnswww.cns.cwru.edu/php/chet/readline/rltop.html
   license: GPL3
+  license_file: COPYING
   summary: library for editing command lines as they are typed in
+  description: |
+    The standard Python readline extension statically linked against the GNU
+    readline library.
+  doc_url: https://pypi.python.org/pypi/readline
+  doc_source_url: https://github.com/ludwigschwardt/python-gnureadline
 
 extra:
   recipe-maintainers:
