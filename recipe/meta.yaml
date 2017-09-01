@@ -10,10 +10,12 @@ source:
   sha256: 750d437185286f40a369e1e4f4764eda932b9459b5ec9a731628393dd3d32334
   patches:
     - patches/readline70-001
+    - patches/readline70-002
+    - patches/readline70-003
 
 build:
   skip: true  # [win]
-  number: 1
+  number: 3
 
 requirements:
   build:
