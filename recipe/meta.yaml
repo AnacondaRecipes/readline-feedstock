@@ -10,12 +10,10 @@ source:
 
 build:
   skip: true  # [win]
-  number: 0
+  number: 1
   run_exports:
     # change soname at major ver: https://abi-laboratory.pro/tracker/timeline/readline/
     - {{ pin_subpackage('readline') }}
-  ignore_run_exports:
-    - ncurses
 
 requirements:
   build:
@@ -24,10 +22,10 @@ requirements:
     - make
   host:
     - ncurses
-  run:
-    - ncurses
 
 test:
+  requires:
+    - python 3.*
   commands:
   {% set readline_libs = [
     'libreadline',
@@ -37,6 +35,8 @@ test:
     - test -f ${PREFIX}/lib/{{ lib }}.a
     - test -f ${PREFIX}/lib/{{ lib }}${SHLIB_EXT}  # [not win]
   {% endfor %}
+    # catch missing termcap/ncurses linkage problems
+    - python -c "import readline"
 
 about:
   home: https://tiswww.case.edu/php/chet/readline/rltop.html
