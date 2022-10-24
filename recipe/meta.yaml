@@ -9,6 +9,8 @@ source:
   sha256: 3feb7171f16a84ee82ca18a36d7b9be109a52c04f492a053331d7d1095007c35
 
 build:
+  # Per the upstream homepage, Windows is not supported.
+  # To avoid build failure Windows is therefore skipped.
   skip: true  # [win]
   number: 0
   run_exports:
