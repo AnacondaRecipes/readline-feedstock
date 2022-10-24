@@ -1,4 +1,4 @@
-{% set version = "8.1.2" %}
+{% set version = "8.2" %}
 
 package:
   name: readline
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://ftp.gnu.org/gnu/readline/readline-{{ version }}.tar.gz
-  sha256: 7589a2381a8419e68654a47623ce7dfcb756815c8fee726b98f90bf668af7bc6
+  sha256: 3feb7171f16a84ee82ca18a36d7b9be109a52c04f492a053331d7d1095007c35
 
 build:
   skip: true  # [win]
@@ -45,11 +45,11 @@ about:
   license_file: COPYING
   summary: library for editing command lines as they are typed in
   description: |
-    The GNU Readline library provides a set of functions for use by applications 
-    that allow users to edit command lines as they are typed in. 
-    The Readline library includes additional functions to maintain a list of previously-entered command lines, 
+    The GNU Readline library provides a set of functions for use by applications
+    that allow users to edit command lines as they are typed in.
+    The Readline library includes additional functions to maintain a list of previously-entered command lines,
     to recall and perhaps reedit those lines, and perform csh-like history expansion on previous commands.
-  dev_url: http://git.savannah.gnu.org/cgit/readline.git/
+  dev_url: https://git.savannah.gnu.org/cgit/readline.git/
   doc_url: https://tiswww.case.edu/php/chet/readline/rltop.html
 
 extra:
