@@ -45,6 +45,7 @@ about:
   license: GPL-3.0-only
   license_family: GPL
   license_file: COPYING
+  license_url: https://tiswww.case.edu/php/chet/readline/README
   summary: library for editing command lines as they are typed in
   description: |
     The GNU Readline library provides a set of functions for use by applications
